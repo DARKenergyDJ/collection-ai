@@ -60,3 +60,30 @@ if a == 1:
 else:
     print("NO")
 ```
+
+## ACM 学长
+
+```python
+n = int(input())
+x = []
+y = []
+v = 0
+sum = 0
+z= []
+for i in range(n):
+    s1 = input().split("\n")
+    x.extend(s1)
+m = int(input())
+for j in range(m):
+    s2 = input().split("\n")
+    y.extend(s2)
+for row in y:
+    for col in row:
+        if col == "1":
+            sum += 1
+            v = int(row[2])
+        else:
+            continue
+vname = x[v-1]
+print("I_love_"*sum,vname)
+```
